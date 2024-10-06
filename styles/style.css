@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 25px;
+}
+
+main {
+  width: 704px;
+}
+
+.calc {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.m-selector {
+  /* height: 30px; */
+
+  display: flex;
+
+  list-style: none;
+
+  border: 2px solid rgb(0, 110, 255);
+  border-radius: 5px;
+}
+
+.m-item {
+  padding: 10px;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: "Roboto", system-ui;
+
+  border-right: 2px solid rgb(0, 110, 255);
+
+  user-select: none;
+}
+
+.m-item:last-of-type{
+  border-right: 0;
+}
+
+.m-item:hover {
+  color: #fff;
+  background-color: rgb(0, 110, 255);
+
+  /* border-color: #fff; */
+}
+
+.m-item_selected {
+  color: #fff;
+  background-color: rgb(0, 110, 255);
+}
+
+.content-selector {
+  display: flex;
+
+  list-style: none;
+  justify-content: space-between;
+
+  border: 2px solid rgb(0, 110, 255);
+  border-radius: 5px;
+}
+
+.content-item {
+  padding: 10px;
+
+  /* width: 100%; */
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-right: 2px solid rgb(0, 110, 255);
+}
+
+.content-item:last-of-type {
+  border-right: 0;
+}
+
+.content-label {
+  padding: 0 5px;
+
+  position: absolute;
+  top: -5px;
+
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Roboto", system-ui;
+  font-weight: 400;
+  letter-spacing: 2px;
+
+  color: rgb(0, 110, 255);
+  background-color: #fff;
+}
+
+.content-input {
+  width: 100%;
+
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 23px;
+  font-family: "Roboto", system-ui;
+  font-weight: 400;
+
+  border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Robobto font usage below V */
+.roboto-medium {
+  font-family: "Roboto", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
